@@ -1,0 +1,6 @@
+تم ارفاق ملف api 
+uses jwt for authentication api
+تم ارفاق صورة لمخطط ERD
+تم ارفاق قاعدة البيانات المستخدمة
+email for admin login:fadi19912010@gmail.com
+password:12345678
