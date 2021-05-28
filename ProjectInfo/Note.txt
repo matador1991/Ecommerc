@@ -4,3 +4,10 @@ uses jwt for authentication api
 تم ارفاق قاعدة البيانات المستخدمة
 email for admin login:fadi19912010@gmail.com
 password:12345678
+steps for run project locally:
+1-download file by git.
+2-run composer install.
+3-import database.
+4-i attached env file to use it with Modify some things as needed.
+5-if secret key Does not exist in env ,must run php artisan jwt:secret to create it one more time.
+
