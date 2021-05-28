@@ -1,0 +1,104 @@
+{
+	"info": {
+		"_postman_id": "d28c30a0-fb48-4a9d-bbc1-ddf0cb281db0",
+		"name": "E_commerce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost/E-commerce/public/api/user/login",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"E-commerce",
+						"public",
+						"api",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "fadi19912010@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LogOut",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0UtY29tbWVyY2VcL3B1YmxpY1wvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYyMjE1NDI4MSwiZXhwIjoxNjIyMTU3ODgxLCJuYmYiOjE2MjIxNTQyODEsImp0aSI6IkdSYTdmQnpFeHpaN0NsT1EiLCJzdWIiOjAsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkifQ.a19ifsknHK14T8LLxmJCjO0tN8hFi7Q4WS58X1cBbxk",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "localhost/E-commerce/public/api/user/logout",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"E-commerce",
+						"public",
+						"api",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllOrders",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "auth-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL0UtY29tbWVyY2VcL3B1YmxpY1wvYXBpXC91c2VyXC9sb2dpbiIsImlhdCI6MTYyMjE1NDI4MSwiZXhwIjoxNjIyMTU3ODgxLCJuYmYiOjE2MjIxNTQyODEsImp0aSI6IkdSYTdmQnpFeHpaN0NsT1EiLCJzdWIiOjAsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkifQ.a19ifsknHK14T8LLxmJCjO0tN8hFi7Q4WS58X1cBbxk",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost/E-commerce/public/api/user/getAllOrders",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"E-commerce",
+						"public",
+						"api",
+						"user",
+						"getAllOrders"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
