@@ -4,6 +4,7 @@
         <th class="text-center">Order Number</th>
         <th class="text-center">Title</th>
         <th class="text-center">Customer Name</th>
+        <th class="text-center">Total Price</th>
         <th class="text-center">Date</th>
     </tr>
     </thead>
@@ -14,6 +15,7 @@
                 <td class="text-center">{{$l->id}}</td>
                 <td class="text-center">{{$l->title}}</td>
                 <td class="text-center">{{$l->customer}}</td>
+                <td class="text-center">{{$l->product->sum('price')}}</td>
                 <td class="text-center">{{ $l->created_at->format('d-m-Y h:i a') }}</td>
             </tr>
         @endforeach
