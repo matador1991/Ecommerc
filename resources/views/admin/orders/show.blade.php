@@ -33,6 +33,7 @@
                             <th class="text-center">Order Number</th>
                             <th class="text-center">Title</th>
                             <th class="text-center">Customer Name</th>
+                            <th class="text-center">Total Price</th>
                             <th class="text-center">Date</th>
                             <th colspan="2" class="text-center">Operation</th>
                         </tr>
@@ -45,6 +46,7 @@
                             <td class="text-center">{{$l->id}}</td>
                             <td class="text-center">{{$l->title}}</td>
                             <td class="text-center">{{$l->customer}}</td>
+                            <td class="text-center">{{$l->product->sum('price')}}</td>
                             <td class="text-center">{{ $l->created_at->format('d-m-Y h:i a') }}</td>
                                 <td class="text-center"><a href="{{route('order.edit',$l->id)}}" class="btn btn-outline-dark"><i class="fa fa-edit"></i>Modify</a></td>
                                 <td class="text-center"><a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#deleteProd{{$l->id}}"><i class="fa fa-trash"></i> Delete</a></td>
