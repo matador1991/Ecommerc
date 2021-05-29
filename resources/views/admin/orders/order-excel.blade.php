@@ -13,7 +13,7 @@
             <tr>
                 <td class="text-center">{{$l->id}}</td>
                 <td class="text-center">{{$l->title}}</td>
-                <td class="text-center">{{$l->admin->name}}</td>
+                <td class="text-center">{{$l->customer}}</td>
                 <td class="text-center">{{ $l->created_at->format('d-m-Y h:i a') }}</td>
             </tr>
         @endforeach
